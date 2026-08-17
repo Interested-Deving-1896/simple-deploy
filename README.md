@@ -1,27 +1,91 @@
 # simple-deploy
 
-There is a shortage of perfect ways to deploy software.
+[![Built with Ona](https://ona.com/build-with-ona.svg)](https://app.ona.com/#https://github.com/Interested-Deving-1896/simple-deploy) [![KDE Eco](https://img.shields.io/badge/KDE%20Eco-certified-brightgreen?logo=kde&logoColor=white&style=flat-square)](https://eco.kde.org/) [![Blue Angel](https://img.shields.io/badge/Blue%20Angel-DE--UZ%20215-0055a4?style=flat-square)](https://www.blauer-engel.de/en/certification/criteria) [![Energy](https://api.green-coding.io/v1/ci/badge/get?repo=Interested-Deving-1896%2Fsimple-deploy&branch=main&workflow=eco-audit.yml)](https://metrics.green-coding.io/ci-index.html)
 
-Hopefully this makes it a little bit easier.
 
-## git-worktrees
+<!-- AI:start:what-it-does -->
+_Description pending._
+<!-- AI:end:what-it-does -->
 
-Scenario: You want to deploy a web site to a web server. You also want
-to be able to test on this website without clobbering your live site by
-accident. Also you know git.
+## Architecture
 
-So you decide on git branches.
+<!-- AI:start:architecture -->
+_Architecture documentation pending._
+<!-- AI:end:architecture -->
 
-Now you need a way to turn git branches into directories on the server so
-your apache or nginx instance can serve them.
+## Install
 
-So you write a script (this one) that maintains a bare git checkout and also
-a set of git worktrees to match what your remote has. Now you just need to
-run it every 1-60 minutes to sync your remote with the server.
+<!-- Add installation instructions here. This section is yours — the AI will not modify it. -->
 
-Running a task every few minutes is a solved problem on Linux in so many
-ways, so with this script already written and available, you can get going
-much faster.
+```bash
+git clone https://github.com/Interested-Deving-1896/simple-deploy.git
+cd simple-deploy
+```
 
-What if you need to execute something every update, such as an rsync, or
-re-triggering a build + deploy run? Set a hook here to do that.
+## Usage
+
+<!-- Add usage examples here. This section is yours — the AI will not modify it. -->
+
+## Configuration
+
+<!-- Document configuration options here. This section is yours — the AI will not modify it. -->
+
+## CI
+
+<!-- AI:start:ci -->
+_CI documentation pending._
+<!-- AI:end:ci -->
+
+## Mirror chain
+
+<!-- AI:start:mirror-chain -->
+This repo is maintained in [`Interested-Deving-1896/simple-deploy`](https://github.com/Interested-Deving-1896/simple-deploy) and mirrored through:
+
+```
+Interested-Deving-1896/simple-deploy  ──►  OpenOS-Project-OSP/simple-deploy  ──►  OpenOS-Project-Ecosystem-OOC/simple-deploy
+```
+
+Changes flow downstream automatically via the hourly mirror chain in
+[`fork-sync-all`](https://github.com/Interested-Deving-1896/fork-sync-all).
+Direct commits to OSP or OOC are detected and opened as PRs back to `Interested-Deving-1896`.
+<!-- AI:end:mirror-chain -->
+
+## Contributors
+
+<!-- AI:start:contributors -->
+_Contributors pending._
+<!-- AI:end:contributors -->
+
+## Origins
+
+<!-- AI:start:origins -->
+_Original project — no upstream influences recorded._
+<!-- AI:end:origins -->
+
+## Resources
+
+<!-- AI:start:resources -->
+_No additional resource files found._
+<!-- AI:end:resources -->
+
+## Accessibility
+
+<!-- AI:start:accessibility -->
+This repo uses automated accessibility auditing via `check-accessibility.yml`.
+
+Checks include: CODEOWNERS ownership coverage, README screen-reader compatibility,
+WCAG 2.1 AA HTML compliance, audio overview (espeak-ng), and Braille output (liblouis).
+
+
+
+
+Run the [Check Accessibility](https://github.com/Interested-Deving-1896/simple-deploy/actions/workflows/check-accessibility.yml)
+workflow to generate the first report and accessibility artifacts.
+See [DOCS/accessibility.md](https://github.com/Interested-Deving-1896/simple-deploy/blob/main/DOCS/accessibility.md) for the full reference.
+<!-- AI:end:accessibility -->
+
+## License
+
+<!-- AI:start:license -->
+<!-- License not detected — add a LICENSE file to this repo. -->
+<!-- AI:end:license -->
